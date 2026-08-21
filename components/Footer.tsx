@@ -20,9 +20,9 @@ export default function Footer() {
             <Image
               src="/images/logo.png"
               alt={`${brand.name} logo`}
-              width={190}
-              height={60}
-              className="h-14 w-auto rounded-xl bg-white p-2"
+              width={180}
+              height={180}
+              className="h-16 w-auto rounded-xl bg-white p-1.5 object-contain"
             />
             <p className="mt-5 max-w-sm text-white/70">{brand.tagline}</p>
           </div>

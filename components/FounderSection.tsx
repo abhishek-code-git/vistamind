@@ -39,7 +39,7 @@ export default function FounderSection() {
               Founder & Chairperson
             </p>
             <blockquote className="mt-8 border-l-4 border-brand-gold pl-6 font-display text-3xl font-bold leading-tight text-brand-ink">
-              "True progress begins with empowered minds."
+              &ldquo;True progress begins with empowered minds.&rdquo;
             </blockquote>
             <p className="mt-6 text-lg leading-8 text-brand-muted">
               This section is structured for verified foundation information:

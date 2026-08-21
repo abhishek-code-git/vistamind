@@ -45,10 +45,10 @@ export default function Navbar() {
             <Image
               src="/images/logo.png"
               alt={`${brand.name} logo`}
-              width={172}
-              height={54}
+              width={180}
+              height={180}
               priority
-              className="h-12 w-auto"
+              className="h-12 w-auto object-contain rounded-md"
             />
           </Link>
 
@@ -99,9 +99,9 @@ export default function Navbar() {
               <Image
                 src="/images/logo.png"
                 alt={`${brand.name} logo`}
-                width={150}
-                height={48}
-                className="h-10 w-auto"
+                width={140}
+                height={140}
+                className="h-10 w-auto object-contain rounded-md"
               />
             </div>
             <div className="grid gap-1">
