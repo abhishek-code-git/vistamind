@@ -11,8 +11,8 @@ import {
 export const brand = {
   name: "Vistamind Social Foundation",
   tagline: "Empowering Futures Through Education",
-  email: "info@vistamind.org",
-  phone: "+91 00000 00000",
+  email: "sangeetarani1974@gmail.com ",
+  phone: "+91 9990101657 ",
   address: "Foundation address to be updated",
   social: {
     instagram: "#",
