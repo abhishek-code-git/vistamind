@@ -1,6 +1,12 @@
 "use client";
 
-import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
+import {
+  motion,
+  useInView,
+  useMotionValue,
+  useMotionValueEvent,
+  useSpring,
+} from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import SectionHeading from "@/components/SectionHeading";
 import { fadeUp, staggerChildren, viewport } from "@/components/animations";
@@ -10,16 +16,14 @@ function CountUp({ target, fallback }: { target?: number; fallback: string }) {
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true, amount: 0.4 });
   const value = useMotionValue(0);
-  const spring = useSpring(value, { duration: 1400, bounce: 0 });
+  const spring = useSpring(value, { stiffness: 90, damping: 18, mass: 0.8 });
   const [display, setDisplay] = useState(target ? "0" : fallback);
 
-  useEffect(() => {
-    if (!target) return;
-    const unsubscribe = spring.on("change", (latest) =>
-      setDisplay(`${Math.round(latest)}+`),
-    );
-    return unsubscribe;
-  }, [spring, target]);
+  useMotionValueEvent(spring, "change", (latest) => {
+    if (target) {
+      setDisplay(`${Math.round(latest)}+`);
+    }
+  });
 
   useEffect(() => {
     if (isInView && target) value.set(target);

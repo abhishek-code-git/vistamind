@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { ReactNode } from "react";
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 import { brand, navItems } from "@/data/siteData";
 
@@ -28,7 +29,11 @@ export default function Footer() {
           </div>
           <FooterColumn title="Quick Links">
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href} className="hover:text-brand-gold">
+              <Link
+                key={item.href}
+                href={item.href}
+                className="hover:text-brand-gold"
+              >
                 {item.label}
               </Link>
             ))}
@@ -97,7 +102,7 @@ function FooterColumn({
   children,
 }: {
   title: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <div>

@@ -21,7 +21,7 @@ export default function Ecosystem() {
           initial="hidden"
           whileInView="visible"
           viewport={viewport}
-          className="relative mx-auto grid max-w-5xl gap-5 md:grid-cols-3"
+          className="relative mx-auto grid max-w-5xl gap-5 md:grid-cols-3 md:auto-rows-fr"
         >
           <svg
             className="pointer-events-none absolute inset-0 hidden h-full w-full md:block"
@@ -45,7 +45,7 @@ export default function Ecosystem() {
           ))}
           <motion.div
             variants={fadeUp}
-            className="relative z-10 flex min-h-44 items-center justify-center rounded-[28px] bg-gradient-to-br from-brand-navy to-brand-green p-8 text-center text-white shadow-premium md:col-start-2"
+            className="relative z-10 flex min-h-44 items-center justify-center rounded-[28px] bg-gradient-to-br from-brand-navy to-brand-green p-8 text-center text-white shadow-premium md:col-start-2 md:row-start-2"
           >
             <div>
               <p className="text-sm font-bold uppercase tracking-[0.2em] text-white/75">
