@@ -27,7 +27,7 @@ export default function Gallery() {
           title="Moments from the Vistamind Journey"
           description="A dynamic gallery ready for events, education initiatives, community activities, workshops, awards and campaigns."
         />
-        <div className="mb-8 flex flex-wrap justify-center gap-2">
+        <div className="mb-8 flex snap-x justify-start gap-2 overflow-x-auto px-1 pb-2 sm:flex-wrap sm:justify-center sm:overflow-visible sm:px-0 sm:pb-0">
           {galleryFilters.map((item) => (
             <button
               type="button"
@@ -36,7 +36,7 @@ export default function Gallery() {
                 setFilter(item);
                 setActiveIndex(null);
               }}
-              className={`rounded-full border px-4 py-2 text-xs font-bold uppercase tracking-[0.14em] transition ${
+              className={`shrink-0 snap-start rounded-full border px-4 py-2 text-xs font-bold uppercase tracking-[0.14em] transition ${
                 filter === item
                   ? "border-brand-green bg-brand-green text-white"
                   : "border-brand-navy/10 bg-white text-brand-muted hover:border-brand-green/40 hover:text-brand-green"
@@ -70,11 +70,13 @@ export default function Gallery() {
                     className="object-cover transition duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-ink/75 via-brand-ink/10 to-transparent opacity-90" />
-                  <div className="absolute inset-x-0 bottom-0 p-5 text-white">
+                  <div className="absolute inset-x-0 bottom-0 p-3 text-white sm:p-5">
                     <span className="rounded-full bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] backdrop-blur">
                       {item.category}
                     </span>
-                    <h3 className="mt-3 text-xl font-bold">{item.title}</h3>
+                    <h3 className="mt-2 text-base font-bold leading-tight sm:mt-3 sm:text-xl">
+                      {item.title}
+                    </h3>
                   </div>
                 </div>
               </button>

@@ -33,7 +33,7 @@ export default function StorySection() {
           <p className="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-brand-green">
             Featured Story
           </p>
-          <h2 className="font-display text-4xl font-bold leading-tight text-brand-ink md:text-5xl">
+          <h2 className="font-display text-3xl font-bold leading-[1.1] text-brand-ink sm:text-4xl md:text-5xl">
             Stories That Inspire Change
           </h2>
           <p className="mt-6 text-lg leading-8 text-brand-muted">

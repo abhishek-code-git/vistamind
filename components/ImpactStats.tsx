@@ -52,9 +52,9 @@ export default function ImpactStats() {
             <motion.article
               key={stat.label}
               variants={fadeUp}
-              className="rounded-3xl border border-brand-navy/10 bg-white p-7 shadow-card"
+              className="rounded-3xl border border-brand-navy/10 bg-white p-5 shadow-card sm:p-7"
             >
-              <p className="font-display text-5xl font-bold text-brand-navy">
+              <p className="font-display text-4xl font-bold text-brand-navy sm:text-5xl">
                 <CountUp target={stat.numeric} fallback={stat.value} />
               </p>
               <p className="mt-4 text-sm font-bold uppercase tracking-[0.12em] text-brand-muted">

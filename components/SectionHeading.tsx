@@ -22,11 +22,13 @@ export default function SectionHeading({
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="font-display text-4xl font-bold leading-tight text-brand-ink md:text-5xl">
+      <h2 className="font-display text-3xl font-bold leading-[1.1] text-brand-ink sm:text-4xl md:text-5xl">
         {title}
       </h2>
       {description ? (
-        <p className="mt-5 text-lg leading-8 text-brand-muted">{description}</p>
+        <p className="mt-4 text-base leading-7 text-brand-muted sm:text-lg sm:leading-8">
+          {description}
+        </p>
       ) : null}
     </div>
   );

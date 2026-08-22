@@ -9,10 +9,10 @@ const impactCards = ["18+ Years", "60+ Awards", "Education First"];
 
 export default function Hero() {
   return (
-    <section className="relative isolate overflow-hidden pb-20 pt-32 md:pb-28 md:pt-40">
+    <section className="relative isolate overflow-hidden pb-16 pt-28 sm:pb-20 md:pb-28 md:pt-40">
       <div className="absolute inset-0 -z-10 logo-pattern opacity-60" />
       <div className="absolute right-0 top-24 -z-10 h-72 w-72 rounded-full bg-brand-green/10 blur-3xl" />
-      <div className="section-shell grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
+      <div className="section-shell grid items-center gap-9 sm:gap-12 lg:grid-cols-[0.95fr_1.05fr]">
         <motion.div
           variants={staggerChildren}
           initial="hidden"
@@ -27,7 +27,7 @@ export default function Hero() {
           </motion.p>
           <motion.h1
             variants={fadeUp}
-            className="font-display text-5xl font-bold leading-[1.02] text-brand-ink md:text-7xl"
+            className="font-display text-[2.65rem] font-bold leading-[1.04] text-brand-ink sm:text-5xl md:text-7xl"
           >
             Empowering Futures Through{" "}
             <span className="bg-gradient-to-r from-brand-green to-brand-navy bg-clip-text text-transparent">
@@ -36,7 +36,7 @@ export default function Hero() {
           </motion.h1>
           <motion.p
             variants={fadeUp}
-            className="mt-6 max-w-xl text-lg leading-8 text-brand-muted"
+            className="mt-5 max-w-xl text-base leading-7 text-brand-muted sm:mt-6 sm:text-lg sm:leading-8"
           >
             Building stronger communities by creating meaningful opportunities
             for learning, growth and a better future.
@@ -62,7 +62,7 @@ export default function Hero() {
         >
           <div className="absolute -left-4 top-8 h-24 w-24 rounded-3xl border border-brand-gold/40 bg-white/50" />
           <div className="absolute -right-3 bottom-10 h-20 w-20 rounded-full bg-brand-red/10" />
-          <div className="relative aspect-[5/4] overflow-hidden rounded-[28px] bg-gradient-to-br from-brand-navy/15 via-white to-brand-green/15 shadow-premium">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] bg-gradient-to-br from-brand-navy/15 via-white to-brand-green/15 shadow-premium sm:aspect-[5/4] sm:rounded-[28px]">
             <Image
               src="/images/hero.jpg"
               alt="Students learning together through Vistamind Social Foundation"

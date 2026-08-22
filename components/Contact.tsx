@@ -44,8 +44,8 @@ export default function Contact() {
           description="Reach out for support, volunteering, partnerships or foundation information."
         />
         <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
-          <aside className="rounded-[28px] bg-brand-navy p-7 text-white shadow-premium md:p-9">
-            <h3 className="font-display text-3xl font-bold">
+          <aside className="rounded-[28px] bg-brand-navy p-6 text-white shadow-premium sm:p-7 md:p-9">
+            <h3 className="font-display text-2xl font-bold sm:text-3xl">
               Vistamind Social Foundation
             </h3>
             <p className="mt-4 leading-7 text-white/78">{brand.tagline}</p>
@@ -153,7 +153,7 @@ function ContactLine({
   const content = (
     <>
       <Icon aria-hidden className="h-5 w-5 shrink-0 text-brand-gold" />
-      <span>{label}</span>
+      <span className="min-w-0 break-words">{label}</span>
     </>
   );
 

@@ -14,7 +14,7 @@ export default function FounderSection() {
           initial="hidden"
           whileInView="visible"
           viewport={viewport}
-          className="grid items-center gap-10 rounded-[28px] border border-brand-navy/10 bg-white p-6 shadow-card md:p-10 lg:grid-cols-[0.85fr_1.15fr]"
+          className="grid items-center gap-8 rounded-[28px] border border-brand-navy/10 bg-white p-5 shadow-card sm:gap-10 sm:p-6 md:p-10 lg:grid-cols-[0.85fr_1.15fr]"
         >
           <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-brand-navy/10">
             <Image
@@ -29,7 +29,7 @@ export default function FounderSection() {
             <p className="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-brand-green">
               Founder
             </p>
-            <h2 className="font-display text-4xl font-bold leading-tight text-brand-ink md:text-5xl">
+            <h2 className="font-display text-3xl font-bold leading-[1.1] text-brand-ink sm:text-4xl md:text-5xl">
               Leadership Driven by a Passion for Education
             </h2>
             <p className="mt-6 text-2xl font-semibold text-brand-navy">
@@ -38,7 +38,7 @@ export default function FounderSection() {
             <p className="mt-1 text-sm font-bold uppercase tracking-[0.14em] text-brand-muted">
               Founder & Chairperson
             </p>
-            <blockquote className="mt-8 border-l-4 border-brand-gold pl-6 font-display text-3xl font-bold leading-tight text-brand-ink">
+            <blockquote className="mt-7 border-l-4 border-brand-gold pl-4 font-display text-2xl font-bold leading-tight text-brand-ink sm:mt-8 sm:pl-6 sm:text-3xl">
               &ldquo;True progress begins with empowered minds.&rdquo;
             </blockquote>
             <p className="mt-6 text-lg leading-8 text-brand-muted">

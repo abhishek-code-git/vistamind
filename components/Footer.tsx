@@ -53,7 +53,7 @@ export default function Footer() {
             <h3 className="text-sm font-bold uppercase tracking-[0.18em] text-brand-gold">
               Newsletter
             </h3>
-            <form className="mt-5 flex gap-2">
+            <form className="mt-5 flex flex-col gap-2 sm:flex-row">
               <label className="sr-only" htmlFor="newsletter-email">
                 Email address
               </label>
@@ -61,11 +61,11 @@ export default function Footer() {
                 id="newsletter-email"
                 type="email"
                 placeholder="Email address"
-                className="min-w-0 flex-1 rounded-full border border-white/10 bg-white/10 px-4 text-white placeholder:text-white/50"
+                className="min-w-0 h-12 flex-1 rounded-full border border-white/10 bg-white/10 px-4 text-white placeholder:text-white/50"
               />
               <button
                 type="submit"
-                className="rounded-full bg-brand-gold px-5 text-sm font-bold uppercase tracking-[0.12em] text-brand-ink"
+                className="min-h-12 rounded-full bg-brand-gold px-5 text-sm font-bold uppercase tracking-[0.12em] text-brand-ink"
               >
                 Subscribe
               </button>
@@ -85,7 +85,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-white/55 md:flex-row md:items-center md:justify-between">
-          <p>© Vistamind Social Foundation</p>
+          <p>Copyright Vistamind Social Foundation</p>
           <div className="flex flex-wrap gap-5">
             <Link href="#">Privacy Policy</Link>
             <Link href="#">Terms</Link>

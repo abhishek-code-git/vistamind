@@ -37,7 +37,7 @@ export default function AboutSection() {
           <p className="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-brand-green">
             Who We Are
           </p>
-          <h2 className="font-display text-4xl font-bold leading-tight text-brand-ink md:text-5xl">
+          <h2 className="font-display text-3xl font-bold leading-[1.1] text-brand-ink sm:text-4xl md:text-5xl">
             Education is not just about learning. It is about creating
             possibilities.
           </h2>
