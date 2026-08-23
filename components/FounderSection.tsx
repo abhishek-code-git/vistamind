@@ -42,9 +42,8 @@ export default function FounderSection() {
               &ldquo;True progress begins with empowered minds.&rdquo;
             </blockquote>
             <p className="mt-6 text-lg leading-8 text-brand-muted">
-              This section is structured for verified foundation information:
-              founder message, education background, experience, leadership and
-              long-term vision. Public claims can be added here once confirmed.
+           "It is an honour to be a part of the educator community. My journey in education and social work has been deeply 
+enriching, and I consider this a golden opportunity to serve our nation, society, and most importantly, our students.
             </p>
             <div className="mt-8">
               <Button href="#contact" variant="secondary">

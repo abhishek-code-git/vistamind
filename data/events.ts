@@ -2,25 +2,26 @@ export const events = [
   {
     id: 1,
     date: "To be announced",
-    title: "Education Awareness Program",
-    location: "Location to be updated",
+    title: "Gyankaksh ",
+    location: "Sonipat",
     description:
-      "A community learning initiative designed to strengthen educational awareness.",
+    "Educational Event at O.P. Jindal University"
   },
   {
     id: 2,
     date: "To be announced",
-    title: "Community Workshop",
-    location: "Location to be updated",
+    title: "Visionary Mind Award 2025",
+    location: "Sonipat",
     description:
-      "A practical workshop bringing families, educators and supporters together.",
+      " Principal Conclave at Rishihood University",
   },
   {
     id: 3,
     date: "To be announced",
-    title: "Foundation Initiative",
-    location: "Location to be updated",
+    title: "Educational Event and meritorious programme ",
+    location: "Greater Noida",
     description:
-      "A foundation-led program supporting education and community opportunity.",
+    " Organised Educational Event and meritorious programme with PAAI at Maharishi University, Greater Noida, Amit University, Jaipur and Mohali",
+
   },
 ];

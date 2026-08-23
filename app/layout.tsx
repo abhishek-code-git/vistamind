@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     images: ["/images/hero.jpg"],
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: "\logo.png",
   },
 };
 

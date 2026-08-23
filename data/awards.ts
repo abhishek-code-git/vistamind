@@ -2,16 +2,16 @@ export const awards = [
   {
     id: 1,
     image: "/images/awards/award-1.jpg",
-    title: "Award Title to be Updated",
+    title: "Best Teacher",
     year: "Year",
-    organization: "Organization",
+    organization: "Krishna Institute of Engineering and Technology (KIET)",
   },
   {
     id: 2,
     image: "/images/awards/award-2.jpg",
-    title: "Recognition to be Updated",
+    title: "Best Teacher",
     year: "Year",
-    organization: "Organization",
+    organization: "NAAC Grade",
   },
   {
     id: 3,

@@ -13,7 +13,6 @@ export default function Awards() {
         <SectionHeading
           eyebrow="Awards & Recognition"
           title="Recognizing the Journey"
-          description="Award details are placeholders until verified titles, years and organizations are supplied."
         />
         <motion.div
           variants={fadeUp}
